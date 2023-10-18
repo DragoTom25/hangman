@@ -103,9 +103,9 @@ class Hangman:
         while self.num_lives > 0:
           letter_guessed = input("Guess a letter in the word ")
           if len(letter_guessed) != 1:
-            print("my bad please enter 1 character")
+            print("Please enter only 1 character")
           elif letter_guessed in self.list_letters:
-            print("bro you've guessed this letter already")
+            print("You've guessed this letter already")
           else:
             self.check_letter(letter_guessed)
 
